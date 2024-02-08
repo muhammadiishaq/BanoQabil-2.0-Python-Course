@@ -203,8 +203,6 @@ while True:
                 elif choice == 3:
                     result = multi(x, y)
                 elif choice == 4:
-                    if y == 0:
-                        print("Cannot divide by zero")
                     result = divide(x, y)
                 elif choice == 5:
                     result = power(x, y)
@@ -214,7 +212,7 @@ while True:
             elif choice in [6, 7, 8, 9, 10, 11]:
                 x = float(input("Enter your number :"))
                 if choice == 6:
-                    if x >= 0:
+                    if x <= 0:
                         print("Error!😡: Cannot calculate square root of a negative number.")
                     result = square_root(x)
                 elif choice == 7:
@@ -235,10 +233,16 @@ while True:
         except ValueError:
             print()
             print("Error!😡: Enter inputs in digits!.")
+        # except square_root:
+
+        # ZeroDivision Error handling.
+        except ZeroDivisionError:
+            print("Cannot divide by zero")
         # Error which user input invalid operation
         except:
             print()
             print("Error!😡: Invalid Choice Operation!.")
+
     # For shutdown calculator
     elif Button_on_off == "OFF" or Button_on_off == "Off" or Button_on_off == "off":
             print()
