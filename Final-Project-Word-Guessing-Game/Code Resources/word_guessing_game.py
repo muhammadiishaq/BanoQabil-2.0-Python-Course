@@ -1,5 +1,5 @@
-#Name: Abdur Rahman Naseem
-#Email:maninaseem1965@gmail.com
+#  Student Name: Muhammad Ishaq
+#  Email:muhammadishaqpak801@gmail.com
 
 # -----------------
 # Importing modules
